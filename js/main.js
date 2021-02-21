@@ -5,6 +5,7 @@ import { calcArea } from "./functions/function.js";
 import { bill2 } from "./functions/function.js";
 import { greet2 } from "./functions/function.js";
 import { name } from "./functions/function.js";
+import { user } from "./objects/objectLiterals.js";
 
 console.log(rainbow);
 
@@ -37,3 +38,8 @@ const ul = document.querySelector('.people');
 let html = ``;
 people.forEach(person => html += `<li style = "color: green">${person}</li>`);
 ul.innerHTML = html;
+
+console.log(user.name, user.location, user.age);
+user.login();
+user.logout();
+user.logBlogs();
