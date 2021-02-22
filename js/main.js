@@ -24,6 +24,9 @@ import {items} from "./DOM/DOM.js";
 import {ul1} from "./DOM/DOM.js";
 import {copy} from "./DOM/DOM.js";
 import {box} from "./DOM/DOM.js";
+import {popupButton} from "./DOM/popup.js";
+import {popup} from "./DOM/popup.js";
+import {close} from "./DOM/popup.js";
 
 console.log(rainbow);
 
@@ -153,4 +156,13 @@ box.addEventListener('mousemove', e => {
     box.textContent = `X position is ${e.offsetX}, Y position is ${e.offsetY}`;
 });
 
-// scroll eventlistener
+//popup
+popupButton.addEventListener('click', () => {
+    popup.style.display = 'block'; // launches the popup
+});
+close.addEventListener('click', () => {
+    popup.style.display = 'none'; // closes the popup
+});
+popup.addEventListener('click', () => {
+    popup.style.display = 'none'; // closes the popup
+});
