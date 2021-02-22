@@ -16,3 +16,11 @@ li {
     background: gray;
     border: 1px dotted #ddd;
 }
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 10px 0;
+    background: #eed;
+    text-align: center;
+    padding: 20px;
+}

@@ -38,6 +38,18 @@ const button = document.querySelector('button');
 const items = document.querySelectorAll('li.todo');
 let ul1 = document.querySelector('ul.todo');
 
+// copy event listener
+const copy = document.querySelector('.copy-me');
+
+//mouse pointer move event listener
+const box = document.querySelector('.box');
+
+//scroll event listener
+document.addEventListener('wheel', e => {
+    console.log(e.pageX, e.pageY);
+})
+
+
 export{paragraph}
 export{paragraph1}
 export{paragraph2}
@@ -54,3 +66,5 @@ export{title}
 export{button}
 export{items}
 export{ul1}
+export{copy}
+export{box}

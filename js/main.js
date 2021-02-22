@@ -22,6 +22,8 @@ import { title } from "./DOM/DOM.js";
 import {button} from "./DOM/DOM.js";
 import {items} from "./DOM/DOM.js";
 import {ul1} from "./DOM/DOM.js";
+import {copy} from "./DOM/DOM.js";
+import {box} from "./DOM/DOM.js";
 
 console.log(rainbow);
 
@@ -139,3 +141,16 @@ ul1.addEventListener('click', e => {
     }
     console.log(e.target);
 });
+
+//copy event listener
+copy.addEventListener('copy', () => {
+    console.log('Oi! My content is copyrigted!');
+});
+
+//mouse pointer move event listener
+box.addEventListener('mousemove', e => {
+    // console.log(e.offsetX, e.offsetY);// displaying cursor coodrinates inside the div
+    box.textContent = `X position is ${e.offsetX}, Y position is ${e.offsetY}`;
+});
+
+// scroll eventlistener
